@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ../partials/head %>
+        <title>Invinte <%=id%>
+            
+        </title>
+        <link rel="shortcut icon"
+            href="https://i.postimg.cc/9z33W1Vj/IMG-2032.png"
+            type="image/x-icon">
+        <meta property="og:title" content="Genesis Tournament">
+        <meta property="og:site_name" content="Genesis Tournament">
+        <meta property="og:url" content="http://Genesis-Tournament.com/">
+        <meta property="og:description"content="Международные турниры по Standoff 2! Тебя пригласили на турнир, переходи и принимай участие в один клик и заберай монеты!">
+        <meta property="og:image"content="https://i.postimg.cc/MHZnDLDZ/stan-removebg-preview.png">
+</head>
+
+<body style="background-color: #161D22;">
+    <% id.forEach(function(item) { %>
+    <div style="margin-top: 150px">
+        <div class="col-sm-4 pt-2 mx-auto">
+            <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                    <img class="card-img-top p-5"
+                        src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                </div>
+                <div class="card-body">
+                    <a class="h5 card-title text-dark text-decoration-none">
+                        <p class="size" style="color: #A3AFB8;">Игрок <%=item.username%> приглашает вас на турнир</p>
+
+                    </a>
+                    <p style="color: #A3AFB8;">Для синхронизации данных, нужно<br> привязать к аккаунту standoff 2
+                        ВКонтакте</p>
+                    <b class="card-text size" style="color: #A3AFB8">🪙 1500G</b>
+
+                    <div class="d-flex">
+                        <div class="col">
+                            <p class="versus mt-3">1 vs 1</p>
+                            <p class="card-text pt-2"><small class="text-muted">Только что</small></p>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <a href='/vk/auth/<%=item.username%>'><button type="button" class="btn btn-success"
+                                    style="margin-top: 40px;">ПОДТВЕРИТЬ</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <% }); %>
+</body>
+
+</html>

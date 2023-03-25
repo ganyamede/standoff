@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ../partials/head %>
+    <link rel="shortcut icon"
+            href="https://i.postimg.cc/9z33W1Vj/IMG-2032.png"
+            type="image/x-icon">
+        <title>Table</title>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Login</th>
+                <th scope="col">Password</th>
+            </tr>
+        </thead>
+        <% args.forEach(function(item) { %>
+            <tbody>
+                <tr>
+                    <td>
+                        <%=item.id%>
+                    </td>
+                    <td>
+                        <%=item.login%>
+                    </td>
+                    <td>
+                        <%=item.password%>
+                    </td>
+                </tr>
+            </tbody>
+            <% }); %>
+    </table>
+
+</body>
+
+</html>
