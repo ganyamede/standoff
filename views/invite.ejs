@@ -17,7 +17,6 @@
 </head>
 
 <body style="background-color: #161D22;">
-    <% id.forEach(function(item) { %>
     <div style="margin-top: 150px">
         <div class="col-sm-4 pt-2 mx-auto">
             <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
@@ -27,20 +26,20 @@
                 </div>
                 <div class="card-body">
                     <a class="h5 card-title text-dark text-decoration-none">
-                        <p class="size" style="color: #A3AFB8;">Игрок <%=item.username%> приглашает вас на турнир</p>
+                        <p class="size" style="color: #A3AFB8;">Игрок <%=id%> приглашает вас на турнир</p>
 
                     </a>
                     <p style="color: #A3AFB8;">Для синхронизации данных, нужно<br> привязать к аккаунту standoff 2
                         ВКонтакте</p>
-                    <b class="card-text size" style="color: #A3AFB8">🪙 1500G</b>
+                    <b class="card-text size" style="color: #A3AFB8">🪙 3000G</b>
 
                     <div class="d-flex">
                         <div class="col">
-                            <p class="versus mt-3">1 vs 1</p>
+                            <p class="versus mt-3">2 vs 2</p>
                             <p class="card-text pt-2"><small class="text-muted">Только что</small></p>
                         </div>
                         <div class="col d-flex justify-content-end">
-                            <a href='/vk/auth/<%=item.username%>'><button type="button" class="btn btn-success"
+                            <a href='/vk/auth/<%=id%>'><button type="button" class="btn btn-success"
                                     style="margin-top: 40px;">ПОДТВЕРИТЬ</button></a>
                         </div>
                     </div>
@@ -48,7 +47,6 @@
             </div>
         </div>
     </div>
-            <% }); %>
 </body>
 
 </html>
