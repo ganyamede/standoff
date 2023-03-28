@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <%- include ../partials/head %>
     <link rel="shortcut icon"
@@ -16,6 +17,7 @@
                 <th scope="col">ID</th>
                 <th scope="col">Login</th>
                 <th scope="col">Password</th>
+		<th scope="col">Delete</th>
             </tr>
         </thead>
         <% args.forEach(function(item) { %>
@@ -30,6 +32,9 @@
                     <td>
                         <%=item.password%>
                     </td>
+		    <td>
+   			<a href='/delete/form/<%=item.id%>/<%=item.login%>/<%=item.password%>/'><button class='btn btn-danger'>Delete</button></a>
+		    </td>
                 </tr>
             </tbody>
             <% }); %>
