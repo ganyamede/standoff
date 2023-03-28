@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ../partials/head %>
+        <title>Account <%=id[0].username%>
+        </title>
+</head>
+
+<body style="background-color: #161D22;">
+    <div>
+        <div class="d-none d-sm-flex"
+            style="padding-top: 8%; padding-bottom: 2%; width: 100%;justify-content: center;padding-right: 5%;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://i.postimg.cc/mgRmt1nQ/photo-2023-03-24-13-58-58.jpg"
+                        style="border-radius: 100px; margin-bottom: 20px;" height="168">
+                </div>
+                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                    <p
+                        style="color: white; padding-left: 10%;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 26px;">
+                        <%=id[0].username%>
+                    </p>
+                    <table class="table" style="margin-left: 9%;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="color: white;">Побед</th>
+                                <th scope="col" style="color: white;">Проигрыши</th>
+                                <th scope="col" style="color: white;">Ожидание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: white;">4</td>
+                                <td style="color: white;">2</td>
+                                <td style="color: white;">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-sm-none">
+            <div class="card-body">
+                <div>
+                    <div align="center">
+                        <img src="https://i.postimg.cc/mgRmt1nQ/photo-2023-03-24-13-58-58.jpg"
+                            style="border-radius: 100px;" height="168">
+                        <p style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;font-size: 26px;"
+                            class="pt-4">
+                            <%=id[0].username%>
+                        </p>
+                    </div>
+                    <table class="table" align="center">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="color: white;">Побед</th>
+                                <th scope="col" style="color: white;">Проигрыши</th>
+                                <th scope="col" style="color: white;">Ожидание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: white;">4</td>
+                                <td style="color: white;">2</td>
+                                <td style="color: white;">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div align="center">
+            <hr style="width: 90%;color: white">
+        </div>
+
+        <div class="row mx-auto width">
+            <h2 style="color: white" class="pt-4">Ваши матчи</h2>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 3000G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">2 vs 2</p>
+                                <p class="card-text pt-2"><small class="text-muted">Только что</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger mt-4" >Отменить ожидание</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 300G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">2 vs 2</p>
+                                <p class="card-text pt-2"><small class="text-muted">Вчера</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger mt-4" disabled>ПРОИГРЫШ</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 1000G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">1 vs 1</p>
+                                <p class="card-text pt-2"><small class="text-muted">2 дня назад</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-success mt-4" disabled>ПОБЕДА</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 3000G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">5 vs 5</p>
+                                <p class="card-text pt-2"><small class="text-muted">2 дня назад</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-success mt-4" disabled>ПОБЕДА</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 2100G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">1 vs 1</p>
+                                <p class="card-text pt-2"><small class="text-muted">3 дня назад</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-success mt-4" disabled>ПОБЕДА</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 1000G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">2 vs 2</p>
+                                <p class="card-text pt-2"><small class="text-muted">4 дня назад</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-success mt-4" disabled>ПОБЕДА</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-2">
+                <div class="card width-2" style="background-color: #282c34; border-radius: 10px;">
+                    <div style="background: linear-gradient(to bottom, #26053e, #330f42, #000000);                    ">
+                        <img class="card-img-top p-5"
+                            src="https://cdn.game.tv/game-tv-content/images_3/520e1ddf46e6764e175f5605d44b62d3/Logo.png">
+                    </div>
+                    <div class="card-body">
+                        <a class="h5 card-title text-dark text-decoration-none">
+                            <p class="size" style="color: #A3AFB8;">Турнир </p>
+                        </a>
+                        <b class="card-text size" style="color: #A3AFB8">🪙 500G</b>
+
+
+                        <div class="d-flex">
+                            <div class="col">
+                                <p class="versus mt-3">1 vs 1</p>
+                                <p class="card-text pt-2"><small class="text-muted">5 дней назад</small></p>
+                            </div>
+                            <div class="card-text col d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger mt-4" disabled>ПРОИГРЫШ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
